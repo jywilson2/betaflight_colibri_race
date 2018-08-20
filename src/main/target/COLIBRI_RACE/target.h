@@ -23,6 +23,12 @@
 // Removed to make the firmware fit into flash (in descending order of priority):
 #undef USE_GYRO_OVERFLOW_CHECK // target does not use affected gyros
 #undef USE_RTC_TIME
+#undef USE_SERVOS
+#undef USE_BARO
+#undef USE_DSHOT
+#undef USE_ACRO_TRAINER
+
+#define USE_GPS
 
 #define TARGET_BOARD_IDENTIFIER "CLBR"
 #define BST_DEVICE_NAME         "COLIBRI RACE"

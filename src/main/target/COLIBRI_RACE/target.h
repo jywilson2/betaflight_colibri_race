@@ -24,6 +24,32 @@
 #undef USE_GYRO_OVERFLOW_CHECK // target does not use affected gyros
 #undef USE_RTC_TIME
 
+// Removed to make the firmware fit into flash (in descending order of priority):
+#undef USE_GYRO_OVERFLOW_CHECK // target does not use affected gyros
+#undef USE_RTC_TIME
+#undef USE_SERVOS
+#undef USE_DSHOT
+#undef USE_ACRO_TRAINER
+
+#undef USE_SERIALRX_CRSF       // Team Black Sheep Crossfire protocol
+#undef USE_SERIALRX_IBUS       // FlySky and Turnigy receivers
+#undef USE_SERIALRX_SPEKTRUM   // SRXL, DSM2 and DSMX protocol
+#undef USE_SERIALRX_SUMD       // Graupner Hott protocol
+#undef USE_SERIALRX_SUMH       // Graupner legacy protocol
+#undef USE_SERIALRX_XBUS       // JR
+
+#define USE_DASHBOARD
+#define USE_GPS
+#define USE_GPS_NMEA
+#define USE_GPS_UBLOX
+#define USE_GPS_RESCUE
+#define USE_SENSOR_NAMES
+#define USE_UNCOMMON_MIXERS
+#define USE_SIGNATURE
+#define USE_ABSOLUTE_CONTROL
+#define USE_HOTT_TEXTMODE
+
+
 #define TARGET_BOARD_IDENTIFIER "CLBR"
 #define BST_DEVICE_NAME         "COLIBRI RACE"
 #define BST_DEVICE_NAME_LENGTH  12
